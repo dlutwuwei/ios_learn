@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()<UITableViewDataSource>
+@interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @end
 
@@ -19,6 +19,7 @@
     // Do any additional setup after loading the view.
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
     tableView.dataSource = self;
+    tableView.delegate = self;
     
     [self.view addSubview:tableView];
 }
@@ -37,11 +38,21 @@
     if(!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"id"];
     }
-    cell.textLabel.text = @"主标题";
+    cell.textLabel.text = [NSString stringWithFormat: @"主标题 - %@", @(indexPath.row)];
     cell.detailTextLabel.text = @"副标题";
+    cell.imageView.image = [UIImage imageNamed:@"./icon.bundle/page@2x.png"];
     return cell;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 50;
+}
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    UIViewController *controller = [[UIViewController alloc] init];
+    controller.view.backgroundColor = [UIColor redColor];
+    controller.title = [NSString stringWithFormat: @"%@", @(indexPath.row)];
+    [self.navigationController pushViewController:controller animated:YES];
+}
 @end
 

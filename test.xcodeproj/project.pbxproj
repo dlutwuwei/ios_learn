@@ -15,6 +15,8 @@
 		4E80991022F689ED004F5FBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E80990F22F689ED004F5FBA /* main.m */; };
 		4E80991A22F689ED004F5FBA /* testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E80991922F689ED004F5FBA /* testTests.m */; };
 		4E80992522F689ED004F5FBA /* testUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E80992422F689ED004F5FBA /* testUITests.m */; };
+		4E80993322FC74F1004F5FBA /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4E80993222FC74F1004F5FBA /* icon.bundle */; };
+		4E80993622FC769A004F5FBA /* GTVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E80993522FC769A004F5FBA /* GTVideoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		4E80992022F689ED004F5FBA /* testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E80992422F689ED004F5FBA /* testUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testUITests.m; sourceTree = "<group>"; };
 		4E80992622F689ED004F5FBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E80993222FC74F1004F5FBA /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = icon.bundle; path = ../icon.bundle; sourceTree = "<group>"; };
+		4E80993422FC769A004F5FBA /* GTVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTVideoViewController.h; sourceTree = "<group>"; };
+		4E80993522FC769A004F5FBA /* GTVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTVideoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,7 @@
 		4E8098FF22F689EA004F5FBA /* test */ = {
 			isa = PBXGroup;
 			children = (
+				4E80993222FC74F1004F5FBA /* icon.bundle */,
 				4E80990022F689EA004F5FBA /* AppDelegate.h */,
 				4E80990122F689EA004F5FBA /* AppDelegate.m */,
 				4E80990322F689EA004F5FBA /* ViewController.h */,
@@ -110,6 +116,8 @@
 				4E80990B22F689ED004F5FBA /* LaunchScreen.storyboard */,
 				4E80990E22F689ED004F5FBA /* Info.plist */,
 				4E80990F22F689ED004F5FBA /* main.m */,
+				4E80993422FC769A004F5FBA /* GTVideoViewController.h */,
+				4E80993522FC769A004F5FBA /* GTVideoViewController.m */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -235,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E80993322FC74F1004F5FBA /* icon.bundle in Resources */,
 				4E80990D22F689ED004F5FBA /* LaunchScreen.storyboard in Resources */,
 				4E80990A22F689ED004F5FBA /* Assets.xcassets in Resources */,
 				4E80990822F689EA004F5FBA /* Main.storyboard in Resources */,
@@ -265,6 +274,7 @@
 				4E80990522F689EA004F5FBA /* ViewController.m in Sources */,
 				4E80991022F689ED004F5FBA /* main.m in Sources */,
 				4E80990222F689EA004F5FBA /* AppDelegate.m in Sources */,
+				4E80993622FC769A004F5FBA /* GTVideoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

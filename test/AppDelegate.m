@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "GTVideoViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,7 +22,7 @@
 
     ViewController *controller1 = [[ViewController alloc] init];
     UINavigationController *natvigatorController = [[UINavigationController alloc] initWithRootViewController:controller1];
-
+    natvigatorController.tabBarItem.title = @"新闻";
 
     UITabBarController *tabbarController = [[UITabBarController alloc] init];
     self.window.rootViewController = tabbarController;
@@ -29,12 +30,14 @@
 
 //    UIViewController *controller1 = [[UIViewController alloc] init];
 //    controller1.view.backgroundColor = [UIColor redColor];
-    natvigatorController.tabBarItem.title = @"新闻";
 
-    UIViewController *controller2 = [[UIViewController alloc] init];
-    controller2.view.backgroundColor = [UIColor yellowColor];
-    controller2.tabBarItem.title= @"视频";
+    GTVideoViewController *videoController = [[GTVideoViewController alloc] init];
+    videoController.tabBarItem.title= @"视频";
+    videoController.view.backgroundColor = [UIColor redColor];
 
+//    UIViewController *controller2 = [[UIViewController alloc] init];
+    
+    
     UIViewController *controller3 = [[UIViewController alloc] init];
     controller3.view.backgroundColor = [UIColor blueColor];
     controller3.tabBarItem.title = @"推荐";
@@ -43,9 +46,7 @@
     controller4.view.backgroundColor = [UIColor greenColor];
     controller4.tabBarItem.title = @"我的";
 
-    [tabbarController setViewControllers:@[natvigatorController, controller2, controller2, controller3, controller4]];
-
-    return YES;
+    [tabbarController setViewControllers:@[natvigatorController, videoController, controller3, controller4]];
 
     return YES;
 }
