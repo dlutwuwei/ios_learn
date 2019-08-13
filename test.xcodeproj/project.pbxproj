@@ -17,6 +17,9 @@
 		4E80992522F689ED004F5FBA /* testUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E80992422F689ED004F5FBA /* testUITests.m */; };
 		4E80993322FC74F1004F5FBA /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4E80993222FC74F1004F5FBA /* icon.bundle */; };
 		4E80993622FC769A004F5FBA /* GTVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E80993522FC769A004F5FBA /* GTVideoViewController.m */; };
+		4E80993922FDCE75004F5FBA /* GTRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E80993822FDCE75004F5FBA /* GTRecommendViewController.m */; };
+		4E80993C22FEF7FE004F5FBA /* GTNormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E80993B22FEF7FE004F5FBA /* GTNormalTableViewCell.m */; };
+		4E80993F22FF182D004F5FBA /* GTWebviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E80993E22FF182D004F5FBA /* GTWebviewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,12 @@
 		4E80993222FC74F1004F5FBA /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = icon.bundle; path = ../icon.bundle; sourceTree = "<group>"; };
 		4E80993422FC769A004F5FBA /* GTVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTVideoViewController.h; sourceTree = "<group>"; };
 		4E80993522FC769A004F5FBA /* GTVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTVideoViewController.m; sourceTree = "<group>"; };
+		4E80993722FDCE75004F5FBA /* GTRecommendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTRecommendViewController.h; sourceTree = "<group>"; };
+		4E80993822FDCE75004F5FBA /* GTRecommendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTRecommendViewController.m; sourceTree = "<group>"; };
+		4E80993A22FEF7FE004F5FBA /* GTNormalTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTNormalTableViewCell.h; sourceTree = "<group>"; };
+		4E80993B22FEF7FE004F5FBA /* GTNormalTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTNormalTableViewCell.m; sourceTree = "<group>"; };
+		4E80993D22FF182D004F5FBA /* GTWebviewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTWebviewController.h; sourceTree = "<group>"; };
+		4E80993E22FF182D004F5FBA /* GTWebviewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTWebviewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +120,10 @@
 				4E80990122F689EA004F5FBA /* AppDelegate.m */,
 				4E80990322F689EA004F5FBA /* ViewController.h */,
 				4E80990422F689EA004F5FBA /* ViewController.m */,
+				4E80993D22FF182D004F5FBA /* GTWebviewController.h */,
+				4E80993E22FF182D004F5FBA /* GTWebviewController.m */,
+				4E80993A22FEF7FE004F5FBA /* GTNormalTableViewCell.h */,
+				4E80993B22FEF7FE004F5FBA /* GTNormalTableViewCell.m */,
 				4E80990622F689EA004F5FBA /* Main.storyboard */,
 				4E80990922F689ED004F5FBA /* Assets.xcassets */,
 				4E80990B22F689ED004F5FBA /* LaunchScreen.storyboard */,
@@ -118,6 +131,8 @@
 				4E80990F22F689ED004F5FBA /* main.m */,
 				4E80993422FC769A004F5FBA /* GTVideoViewController.h */,
 				4E80993522FC769A004F5FBA /* GTVideoViewController.m */,
+				4E80993722FDCE75004F5FBA /* GTRecommendViewController.h */,
+				4E80993822FDCE75004F5FBA /* GTRecommendViewController.m */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -274,6 +289,9 @@
 				4E80990522F689EA004F5FBA /* ViewController.m in Sources */,
 				4E80991022F689ED004F5FBA /* main.m in Sources */,
 				4E80990222F689EA004F5FBA /* AppDelegate.m in Sources */,
+				4E80993F22FF182D004F5FBA /* GTWebviewController.m in Sources */,
+				4E80993C22FEF7FE004F5FBA /* GTNormalTableViewCell.m in Sources */,
+				4E80993922FDCE75004F5FBA /* GTRecommendViewController.m in Sources */,
 				4E80993622FC769A004F5FBA /* GTVideoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

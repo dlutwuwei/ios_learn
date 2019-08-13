@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "GTVideoViewController.h"
+#import "GTRecommendViewController.h"
 
 @interface AppDelegate ()
 
@@ -23,7 +24,8 @@
     ViewController *controller1 = [[ViewController alloc] init];
     UINavigationController *natvigatorController = [[UINavigationController alloc] initWithRootViewController:controller1];
     natvigatorController.tabBarItem.title = @"新闻";
-
+    natvigatorController.tabBarItem.image = [UIImage imageNamed:@"./icon.bundle/page@2x.png"];
+    
     UITabBarController *tabbarController = [[UITabBarController alloc] init];
     self.window.rootViewController = tabbarController;
     [self.window makeKeyAndVisible];
@@ -38,15 +40,15 @@
 //    UIViewController *controller2 = [[UIViewController alloc] init];
     
     
-    UIViewController *controller3 = [[UIViewController alloc] init];
-    controller3.view.backgroundColor = [UIColor blueColor];
-    controller3.tabBarItem.title = @"推荐";
+    GTRecommendViewController *recoController3 = [[GTRecommendViewController alloc] init];
+    recoController3.view.backgroundColor = [UIColor blueColor];
+    recoController3.tabBarItem.title = @"推荐";
 
     UIViewController *controller4 = [[UIViewController alloc] init];
     controller4.view.backgroundColor = [UIColor greenColor];
     controller4.tabBarItem.title = @"我的";
 
-    [tabbarController setViewControllers:@[natvigatorController, videoController, controller3, controller4]];
+    [tabbarController setViewControllers:@[natvigatorController, videoController, recoController3, controller4]];
 
     return YES;
 }

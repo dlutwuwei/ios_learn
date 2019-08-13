@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "GTNormalTableViewCell.h"
+#import "GTWebviewController.h"
 
-@interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
+@interface ViewController ()<UITableViewDataSource, UITableViewDelegate, GTNormalTableViewCellDelegate>
 
 @end
 
@@ -33,26 +35,32 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"id"];
-    
+    GTNormalTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"id"];
+
     if(!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"id"];
+        cell = [[GTNormalTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"id"];
+        [cell layoutTableViewCell];
+        cell.delegate = self;
     }
-    cell.textLabel.text = [NSString stringWithFormat: @"主标题 - %@", @(indexPath.row)];
-    cell.detailTextLabel.text = @"副标题";
-    cell.imageView.image = [UIImage imageNamed:@"./icon.bundle/page@2x.png"];
+//    cell.textLabel.text = [NSString stringWithFormat: @"主标题 - %@", @(indexPath.row)];
+//    cell.detailTextLabel.text = @"副标题";
+//    cell.imageView.image = [UIImage imageNamed:@"./icon.bundle/page@2x.png"];
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 50;
+    return 100;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    UIViewController *controller = [[UIViewController alloc] init];
+    GTWebviewController *controller = [[GTWebviewController alloc] init];
     controller.view.backgroundColor = [UIColor redColor];
     controller.title = [NSString stringWithFormat: @"%@", @(indexPath.row)];
     [self.navigationController pushViewController:controller animated:YES];
 }
+- (void) tableViewCell:(UITableViewCell *)tableViewCell clickDeleteButton:(UIButton *)deleteButton {
+    NSLog(@"click delete");
+}
+
 @end
 
