@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "GTNormalTableViewCell.h"
 #import "GTWebviewController.h"
+#import "GTDeleteView.h"
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate, GTNormalTableViewCellDelegate>
 
@@ -60,6 +61,12 @@
 }
 - (void) tableViewCell:(UITableViewCell *)tableViewCell clickDeleteButton:(UIButton *)deleteButton {
     NSLog(@"click delete");
+    GTDeleteView* view = [[GTDeleteView alloc]initWithFrame:self.view.bounds];
+    CGRect rect = [tableViewCell convertRect:deleteButton.frame toView:nil];
+    [view showDeleteView:rect.origin clickBlock:^{
+        NSLog(@"");
+    }];
+    
 }
 
 @end

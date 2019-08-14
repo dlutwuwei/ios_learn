@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "GTVideoViewController.h"
-#import "GTRecommendViewController.h"
+#import "./NewsController/GTRecommendViewController.h"
 
 @interface AppDelegate ()
 

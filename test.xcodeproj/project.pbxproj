@@ -20,6 +20,7 @@
 		4E80993922FDCE75004F5FBA /* GTRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E80993822FDCE75004F5FBA /* GTRecommendViewController.m */; };
 		4E80993C22FEF7FE004F5FBA /* GTNormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E80993B22FEF7FE004F5FBA /* GTNormalTableViewCell.m */; };
 		4E80993F22FF182D004F5FBA /* GTWebviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E80993E22FF182D004F5FBA /* GTWebviewController.m */; };
+		4E80994323044A51004F5FBA /* GTDeleteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E80994223044A51004F5FBA /* GTDeleteView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		4E80993B22FEF7FE004F5FBA /* GTNormalTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTNormalTableViewCell.m; sourceTree = "<group>"; };
 		4E80993D22FF182D004F5FBA /* GTWebviewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTWebviewController.h; sourceTree = "<group>"; };
 		4E80993E22FF182D004F5FBA /* GTWebviewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTWebviewController.m; sourceTree = "<group>"; };
+		4E80994123044A51004F5FBA /* GTDeleteView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTDeleteView.h; sourceTree = "<group>"; };
+		4E80994223044A51004F5FBA /* GTDeleteView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTDeleteView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,24 +118,15 @@
 		4E8098FF22F689EA004F5FBA /* test */ = {
 			isa = PBXGroup;
 			children = (
+				4E80994023030A68004F5FBA /* NewsController */,
 				4E80993222FC74F1004F5FBA /* icon.bundle */,
 				4E80990022F689EA004F5FBA /* AppDelegate.h */,
 				4E80990122F689EA004F5FBA /* AppDelegate.m */,
-				4E80990322F689EA004F5FBA /* ViewController.h */,
-				4E80990422F689EA004F5FBA /* ViewController.m */,
-				4E80993D22FF182D004F5FBA /* GTWebviewController.h */,
-				4E80993E22FF182D004F5FBA /* GTWebviewController.m */,
-				4E80993A22FEF7FE004F5FBA /* GTNormalTableViewCell.h */,
-				4E80993B22FEF7FE004F5FBA /* GTNormalTableViewCell.m */,
 				4E80990622F689EA004F5FBA /* Main.storyboard */,
 				4E80990922F689ED004F5FBA /* Assets.xcassets */,
 				4E80990B22F689ED004F5FBA /* LaunchScreen.storyboard */,
 				4E80990E22F689ED004F5FBA /* Info.plist */,
 				4E80990F22F689ED004F5FBA /* main.m */,
-				4E80993422FC769A004F5FBA /* GTVideoViewController.h */,
-				4E80993522FC769A004F5FBA /* GTVideoViewController.m */,
-				4E80993722FDCE75004F5FBA /* GTRecommendViewController.h */,
-				4E80993822FDCE75004F5FBA /* GTRecommendViewController.m */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -153,6 +147,25 @@
 				4E80992622F689ED004F5FBA /* Info.plist */,
 			);
 			path = testUITests;
+			sourceTree = "<group>";
+		};
+		4E80994023030A68004F5FBA /* NewsController */ = {
+			isa = PBXGroup;
+			children = (
+				4E80990322F689EA004F5FBA /* ViewController.h */,
+				4E80990422F689EA004F5FBA /* ViewController.m */,
+				4E80993D22FF182D004F5FBA /* GTWebviewController.h */,
+				4E80993E22FF182D004F5FBA /* GTWebviewController.m */,
+				4E80993A22FEF7FE004F5FBA /* GTNormalTableViewCell.h */,
+				4E80993B22FEF7FE004F5FBA /* GTNormalTableViewCell.m */,
+				4E80993422FC769A004F5FBA /* GTVideoViewController.h */,
+				4E80993522FC769A004F5FBA /* GTVideoViewController.m */,
+				4E80993722FDCE75004F5FBA /* GTRecommendViewController.h */,
+				4E80993822FDCE75004F5FBA /* GTRecommendViewController.m */,
+				4E80994123044A51004F5FBA /* GTDeleteView.h */,
+				4E80994223044A51004F5FBA /* GTDeleteView.m */,
+			);
+			path = NewsController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +301,7 @@
 			files = (
 				4E80990522F689EA004F5FBA /* ViewController.m in Sources */,
 				4E80991022F689ED004F5FBA /* main.m in Sources */,
+				4E80994323044A51004F5FBA /* GTDeleteView.m in Sources */,
 				4E80990222F689EA004F5FBA /* AppDelegate.m in Sources */,
 				4E80993F22FF182D004F5FBA /* GTWebviewController.m in Sources */,
 				4E80993C22FEF7FE004F5FBA /* GTNormalTableViewCell.m in Sources */,

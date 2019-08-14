@@ -90,6 +90,9 @@
             [self.deselectBtn setTitle:@"x" forState:UIControlStateNormal];
             [self.deselectBtn setTitle:@"v" forState:UIControlStateHighlighted];
             [self.deselectBtn addTarget:self action:@selector(deselectBtnClick) forControlEvents:UIControlEventTouchUpInside];
+            self.deselectBtn.layer.cornerRadius = 10;
+            self.deselectBtn.layer.masksToBounds = YES;
+            self.deselectBtn.layer.borderColor = [UIColor lightTextColor].CGColor;
             self.deselectBtn;
         })];
 
